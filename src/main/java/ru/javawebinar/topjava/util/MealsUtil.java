@@ -25,6 +25,9 @@ public class MealsUtil {
     );
 
 
+    private MealsUtil() {
+    }
+
     public static List<MealTo> getTos(Collection<Meal> meals, int caloriesPerDay) {
         return filterByPredicate(meals, caloriesPerDay, meal -> true);
     }
